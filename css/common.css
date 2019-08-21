@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/** 스킵 네비게이션 **/
+#skip {position:relative}
+#skip a {position:absolute; width:130px; left:0; top:-40px; border:1px solid #fff; color:#fff; background:#333; line-height:30px; text-align:center; font-size:.75rem;}
+#skip a:active, 
+#skip a:focus {top: 0;}
+
+/** 레이아웃 **/
+body {background-color:#02020f}
+.wrapper {width:90%; padding:5%}
+.container {position:relative; width:100%; margin:0 auto;}
+
+/** header **/
+#header {padding-bottom:50px;}
+#header h1 {padding:10px 20px 5px 0}
+#header h1 a {font-family:'Do Hyeon'; font-size:3rem; color:#fff;}
+#header p {color:#666;}

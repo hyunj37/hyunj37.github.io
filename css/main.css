@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/** 콘텐츠 **/
+#contents .set-grid h3 {font-size:2rem; color:#fff; margin-bottom:10px}
+#contents .set-grid ul {display:grid; grid-template-rows:200px; grid-template-columns: 23.5% 23.5% 23.5% 23.5%; grid-column-gap:2%}
+#contents .set-grid li a {display:block; width:100%; height:200px; background-color:rgba(256,256,256,.1); border-radius:20px; overflow:hidden; position:relative; color:#333;}
+#contents .set-grid li a span {display:block; position:absolute; right:2%;}
+#contents .set-grid li a span.type {top:70%}
+#contents .set-grid li a span.name {font-size:1.25rem; top:80%}
+
+#contents .webpages li:nth-child(1) a {background:url(../images/website1.jpg) no-repeat; background-size:cover}
+#contents .webpages li:nth-child(3) a {background:url(../images/website3.jpg) no-repeat; background-size:cover; color:#ddd}
+
+#contents .code {margin-top:50px}
+#contents .code li:nth-child(2) a {background:url(../images/slide1.gif) center no-repeat; background-size:cover;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
