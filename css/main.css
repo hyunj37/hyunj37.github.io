@@ -2,7 +2,7 @@
 
 /** 콘텐츠 **/
 #contents .set-grid h3 {font-size:2rem; color:#fff; margin-bottom:10px}
-#contents .set-grid ul {display:grid; grid-template-rows:200px; grid-template-columns: 23.5% 23.5% 23.5% 23.5%; grid-column-gap:2%}
+#contents .set-grid ul {display:grid; grid-template-rows:200px; grid-template-columns: 23.5% 23.5% 23.5% 23.5%; grid-column-gap:2%; grid-row-gap:3%}
 #contents .set-grid li a {display:block; width:100%; height:200px; background-color:rgba(256,256,256,.1); border-radius:20px; overflow:hidden; position:relative; color:#333;}
 #contents .set-grid li a span {display:block; position:absolute; right:2%;}
 #contents .set-grid li a span.type {top:70%}

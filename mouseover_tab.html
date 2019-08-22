@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tab</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:active,
+        a:focu {
+            color: #333;
+            text-decoration: none;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        body {
+            background-color: #20262e;
+            padding: 20px;
+        }
+
+        .wrapper {
+            width: 100%;
+            position: relative;
+        }
+
+        h1 {
+            color: #fff
+        }
+
+        .tab-box {
+            position: relative;
+            margin-top: 10px;
+            padding-top: 41px;
+            border: 1px solid #fff;
+        }
+
+        .tab-box ul li h2.tab-title {
+            position: absolute;
+            top: 0;
+            width: 25%;
+            text-align: center
+        }
+
+        .tab-box ul li.tab-area1 h2.tab-title {
+            left: 0%
+        }
+
+        .tab-box ul li.tab-area2 h2.tab-title {
+            left: 25%
+        }
+
+        .tab-box ul li.tab-area3 h2.tab-title {
+            left: 50%
+        }
+
+        .tab-box ul li.tab-area4 h2.tab-title {
+            left: 75%
+        }
+
+        .tab-box ul li h2.tab-title a {
+            font-size: 16px;
+            color: #fff;
+            display: block;
+            border-right: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .tab-box ul li:last-child h2.tab-title a {
+            border-right: none;
+        }
+
+        .tab-box ul li h2.tab-title.on a {
+            border-bottom: none;
+            font-size: 20px;
+        }
+
+        .tab-box ul li .tab-cont {
+            display: none;
+            padding: 5%;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Mouseover Tab</h1>
+        <div class="tab-box">
+            <ul>
+                <li class="tab-area1 tab-area">
+                    <h2 class="tab-title"><a href="#">Tab1</a></h2>
+                    <div class="tab-cont">
+                        <p>tab1 content area</p>
+                    </div>
+                </li>
+                <li class="tab-area2 tab-area">
+                    <h2 class="tab-title"><a href="#">Tab2</a></h2>
+                    <div class="tab-cont">
+                        <p>tab2 content area</p>
+                        <p>tab2 content area</p>
+                    </div>
+                </li>
+                <li class="tab-area3 tab-area">
+                    <h2 class="tab-title"><a href="#">Tab3</a></h2>
+                    <div class="tab-cont">
+                        <p>tab3 content area tab3 content area tab3 content area</p>
+                    </div>
+                </li>
+                <li class="tab-area4 tab-area">
+                    <h2 class="tab-title"><a href="#">Tab4</a></h2>
+                    <div class="tab-cont">
+                        <p>tab4 content area</p>
+                        <p>tab4 content area</p>
+                        <p>tab4 content area</p>
+                        <p>tab4 content area</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script>
+        $('.tab-area').eq(0).find('.tab-cont').show();
+        $('.tab-area').eq(0).find('.tab-title').addClass('on');
+
+        $('.tab-title').mouseover(function() {
+            $('.tab-title').removeClass('on');
+            $('.tab-cont').hide();
+
+            $(this).addClass('on');
+            $(this).siblings('.tab-cont').show();
+        });
+    </script>
+</body>
+
+</html>
