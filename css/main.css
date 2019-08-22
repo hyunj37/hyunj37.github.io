@@ -13,7 +13,7 @@
 
 #contents .code {margin-top:50px}
 #contents .code li:nth-child(2) a {background:url(../images/slide1.gif) center no-repeat; background-size:cover;}
-
+#contents .code li:nth-child(4) a {background:url(../images/tab.gif) center no-repeat; background-size:cover; color:#eee}
 
 
 
