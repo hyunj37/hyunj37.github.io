@@ -13,10 +13,10 @@
 
 #contents .code {margin-top:50px}
 #contents .code li a:after {content:''; position:absolute; bottom:0; left:0; width:100%; height:45px; background-color:rgba(256,256,256,.1);}
-#contents .code li:nth-child(2) a {background:url(../images/slide1.gif) center no-repeat; background-size:cover;}
-#contents .code li:nth-child(3) a {background:url(../images/gnb.gif) center no-repeat; background-size:cover; color:#eee}
-#contents .code li:nth-child(4) a {background:url(../images/tab.gif) center no-repeat; background-size:cover; color:#eee}
-#contents .code li:nth-child(5) a {background:url(../images/accordion.gif) center no-repeat; background-size:cover; color:#eee}
+#contents .code li:nth-child(1) a {background:url(../images/slide1.gif) center no-repeat; background-size:cover;}
+#contents .code li:nth-child(2) a {background:url(../images/gnb.gif) center no-repeat; background-size:cover; color:#eee}
+#contents .code li:nth-child(3) a {background:url(../images/tab.gif) center no-repeat; background-size:cover; color:#eee}
+#contents .code li:nth-child(4) a {background:url(../images/accordion.gif) center no-repeat; background-size:cover; color:#eee}
 
 
 
