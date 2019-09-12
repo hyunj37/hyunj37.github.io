@@ -300,11 +300,14 @@
         <!-- /contents -->
         <footer id="footer">
             <div class="contact">
+                <h3>Contact Me <i class="far fa-envelope"></i></h3>
                 <div class="email">
+                    <p>Anything you wondered or suggest, please feel free to contact me.</p>
                     <form action="https://formspree.io/hyunjeong670@gmail.com" method="POST">
-                        <input type="text" name="name">
-                        <input type="email" name="_replyto">
-                        <input type="submit" value="Send">
+                        <label>Your Name<input type="text" name="name" class="name"></label>
+                        <label>Your Email Address<input type="email" name="_replyto" class="email"></label>
+                        <label>Coments<textarea name="message"  class="coments"></textarea></label>
+                        <button type="submit" class="submit">Submit</button>
                     </form>
                 </div>
             </div>
@@ -316,7 +319,9 @@
 
 
     <!-- 자바스크립트 라이브러리 -->
+    <script src="https://kit.fontawesome.com/ac01448d94.js"></script>
     <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/modal.js"></script>
     <!--<script src="js/modernizr-custom.js"></script>
     <script src="js/ie-checker.js"></script>-->

@@ -8,6 +8,7 @@ a {color: #fff; text-decoration: none;}
 a:hover {color: #fff;}
 
 /* 폰트 초기화 */
+html {font-size:16px}
 body, input, textarea, select, button, table {font-family:'Noto Sans KR', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #fff; line-height: 1.5;}
 
 /* 폰트 스타일 초기화 */
