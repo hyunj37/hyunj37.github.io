@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="hyunj">
     <meta name="description" content="Hyunj's workspace">
@@ -13,7 +14,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
-    
+    <link rel="stylesheet" href="css/modal.css">
+
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="images/icons/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="images/icons/favicon_72.png">
@@ -22,26 +24,17 @@
     <link rel="apple-touch-icon-precomposed" sizes="192x192" href="images/icons/favicon_192.png">
 
     <!--구글폰트-->
-    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Noto+Sans+KR:100,300,400,500,700,900|Noto+Serif+KR:200,300,400,500,600,700,900&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Fugaz+One|Noto+Sans+KR:100,300,400,500,700,900|Oswald:400,700|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <!--
-    font-family: 'Black Han Sans', sans-serif;
-    font-family: 'Do Hyeon', sans-serif;
-    font-family: 'Noto Serif KR', serif;
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
     -->
 
-    <!-- 페이스북 메타 태그 -->
-    <meta property="og:title" content="Hyunj's workspace">
-    <meta property="og:url" content="https://hyunj37.github.io">
-    <meta property="og:image" content="" />
-    <meta property="og:description" content="Hyunj's workspace">
-   
-    <!-- 트위터 메타 태그 -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Hyunj's workspace">
-    <meta name="twitter:url" content="https://hyunj37.github.io">
-    <meta name="twitter:image" content="">
-    <meta name="twitter:description" content="Hyunj's workspace">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+    <!-- font-family: 'Chilanka', cursive; -->
 
     <!-- HTLM5shiv ie6~8 -->
     <!--[if lt IE 9]> 
@@ -51,6 +44,7 @@
       </script>
    <![endif]-->
 </head>
+
 <body>
     <!-- 스킵 네비게이션 -->
     <div id="skip">
@@ -67,29 +61,30 @@
         <div id="contents">
             <div class="container">
                 <h2 class="hidden">본문 콘텐츠 영역</h2>
+                <!-- WEBSITE -->
                 <div class="webpages set-grid">
                     <h3>Website</h3>
                     <ul>
                         <li>
-                            <a href="https://hyunj37.github.io/greenhouse_pc/" target="_blank">
+                            <a href="" data-modal="#modal" class="modal__trigger">
                                 <span class="type">웹 표준 사이트</span>
                                 <span class="name">GREEN HOUSE</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">
+                            <a href="" data-modal="#modal2" class="modal__trigger">
                                 <span class="type">모바일 사이트</span>
-                                <span class="name"></span>
+                                <span class="name">GREEN HOUSE</span>
                             </a>
                         </li>
                         <li>
-                           <a href="https://hyunj37.github.io/portfolio/" target="_blank">
+                            <a href="" data-modal="#modal3" class="modal__trigger">
                                 <span class="type">반응형 사이트</span>
                                 <span class="name">STARBUCKS</span>
                             </a>
                         </li>
                         <li>
-                           <!--
+                            <!--
                             <a href="#" target="_blank">
                                 <span clasns="type">부트스트랩 사이트</span>
                                 <span class="name"></span>
@@ -100,8 +95,174 @@
                 </div>
                 <!-- /webpages -->
                 
+                <!-- MODAL -->
+                <div id="modal" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
+                    <div class="modal__dialog">
+                        <div class="modal__content">
+                            <h4>웹 표준 사이트</h4>
+                            <p class="site-name">GREEN HOUSE</p>
+                            <img src="images/greenhouse_pc_mockup.jpg" alt="greenhouse pc mockup">
+                            <a href="https://hyunj37.github.io/greenhouse_pc/" class="go-site">사이트 바로가기</a>
+                            <p class="info-txt">웹 표준을 준수하여 만든 PC버전 사이트로 식물 온라인 몰을 컨셉으로 한 사이트입니다. GNB메뉴, 3종류의 슬라이드, 텝 등 여러 사이트에서 많이 사용하는 기능을 제이쿼리 라이브러리를 이용해 만들었습니다.
+                            </p>
+                            <table>
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>Typography</th>
+                                        <td colspan="4" class="noto">Noto Sans KR</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Color</th>
+                                        <td class="fcolor3 color-chip">#193e27</td>
+                                        <td class="fcolor1 color-chip">#333333</td>
+                                        <td class="fcolor2 color-chip darkbg">#eeeeee</td>
+                                        <td class="fcolor4 color-chip darkbg">#e4deba</td>
+                                    </tr>
+                                    <tr>
+                                        <th>HTML</th>
+                                        <td colspan="4">HTML5</td>
+                                    </tr>
+                                    <tr>
+                                        <th>CSS</th>
+                                        <td colspan="4">css3</td>
+                                    </tr>
+                                    <tr>
+                                        <th>javascript</th>
+                                        <td colspan="4">jQuery-1.12.4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- modal close button -->
+                            <a href="" class="modal__close demo-close">
+                                <svg class="" viewBox="0 0 24 24">
+                                    <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+                                    <path d="M0 0h24v24h-24z" fill="none" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal2" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
+                    <div class="modal__dialog">
+                        <div class="modal__content">
+                            <h4>모바일 웹 사이트</h4>
+                            <p class="site-name">GREEN HOUSE</p>
+                            <img src="images/greenhouse_m_mockup.jpg" alt="greenhouse mobile mockup">
+                            <a href="" class="go-site">사이트 바로가기</a>
+                            <p class="info-txt">모바일 웹에 맞춘 사이트로 이미지 구성은 640px를, 퍼블리싱은 340px을 기준으로 구성했습니다.
+                            화면 터치 슬라이드를 위해 swiper 슬라이드를 이용했습니다. 스크롤에 따른 헤더변경 및 메뉴 나타내기 등 다양한 모바일 웹 요소를 만들어보았습니다.
+                            </p>
+                            <table>
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>Typography</th>
+                                        <td colspan="4" class="noto">Noto Sans KR</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Color</th>
+                                        <td class="fcolor3 color-chip">#193e27</td>
+                                        <td class="fcolor1 color-chip">#333333</td>
+                                        <td class="fcolor2 color-chip darkbg">#eeeeee</td>
+                                        <td class="fcolor4 color-chip darkbg">#e4deba</td>
+                                    </tr>
+                                    <tr>
+                                        <th>HTML</th>
+                                        <td colspan="4">HTML5</td>
+                                    </tr>
+                                    <tr>
+                                        <th>CSS</th>
+                                        <td colspan="4">css3</td>
+                                    </tr>
+                                    <tr>
+                                        <th>javascript</th>
+                                        <td colspan="4">jQuery-1.12.4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- modal close button -->
+                            <a href="" class="modal__close demo-close">
+                                <svg class="" viewBox="0 0 24 24">
+                                    <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+                                    <path d="M0 0h24v24h-24z" fill="none" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal3" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
+                    <div class="modal__dialog">
+                        <div class="modal__content">
+                            <h4>Modal 3</h4>
+                            <p class="site-name">STARBUCKS</p>
+                            <img src="images/starbucks_responsive_mockup.jpg" alt="starbucks responsive mockup">
+                            <a href="" class="go-site">사이트 바로가기</a>
+                            <p class="info-txt">스타벅스만의 가치와 특징을 반영하고,
+                            영상, 이미지를 활용하여 사용자가 능동적으로 이용할 수 있는 사이트를 만들고자 했습니다.
+                            메인과 5개의 서브페이지를 스크롤, 마우스오버, 슬라이드 효과를 주어 구성했습니다.
+                            화면의 크기에 따라 레이아웃을 달리하여 다양한 디바이스에서 적절하게 보일 수 있도록 했습니다.
+                            </p>
+                            <table>
+                                <colgroup>
+                                    <col width="31%">
+                                    <col width="23%">
+                                    <col width="23%">
+                                    <col width="23%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>Typography</th>
+                                        <td colspan="1" class="osw">Oswald</td>
+                                        <td colspan="2" class="robo">Roboto</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Color</th>
+                                        <td class="fcolor5 color-chip">#00000</td>
+                                        <td class="fcolor6 color-chip darkbg">#ffffff</td>
+                                        <td class="fcolor7 color-chip">#007042</td>
+                                    </tr>
+                                    <tr>
+                                        <th>HTML</th>
+                                        <td colspan="3">HTML5</td>
+                                    </tr>
+                                    <tr>
+                                        <th>CSS</th>
+                                        <td colspan="3">css3</td>
+                                    </tr>
+                                    <tr>
+                                        <th>javascript</th>
+                                        <td colspan="3">jQuery-1.12.4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- modal close button -->
+                            <a href="" class="modal__close demo-close">
+                                <svg class="" viewBox="0 0 24 24">
+                                    <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+                                    <path d="M0 0h24v24h-24z" fill="none" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /MODAL -->
+
+                <!-- SOURCE -->
                 <div class="code set-grid">
-                    <h3>Sorce</h3>
+                    <h3>Source</h3>
                     <ul>
                         <li>
                             <a href="source/sub_slider.html">
@@ -123,33 +284,42 @@
                                 <span class="name">Accordion</span>
                             </a>
                         </li>
+                        <!--
                         <li>
                             <a href="source/sub_css.html">
                                 <span class="name">css effect</span>
                             </a>
                         </li>
+                        -->
                     </ul>
                 </div>
                 <!-- /code -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /contents -->
+        <footer id="footer">
+            <div class="contact">
                 <div class="email">
                     <form action="https://formspree.io/hyunjeong670@gmail.com" method="POST">
-                      <input type="text" name="name">
-                      <input type="email" name="_replyto">
-                      <input type="submit" value="Send">
+                        <input type="text" name="name">
+                        <input type="email" name="_replyto">
+                        <input type="submit" value="Send">
                     </form>
                 </div>
             </div>
-        </div>
-        <footer id="footer">
+            <!-- /contact -->
         </footer>
+
     </div>
+    <!-- /wrapper -->
 
 
-	
-	<!-- 자바스크립트 라이브러리 -->
+    <!-- 자바스크립트 라이브러리 -->
     <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/modal.js"></script>
     <!--<script src="js/modernizr-custom.js"></script>
     <script src="js/ie-checker.js"></script>-->
-    <script src="js/script.js"></script>
 </body>
+
 </html>

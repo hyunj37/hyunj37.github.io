@@ -9,10 +9,24 @@
 /** 레이아웃 **/
 body {background-color:#02020f}
 .wrapper {width:90%; padding:5%}
-.container {position:relative; width:100%; margin:0 auto;}
+.container {position:relative; width:100%; margin:0 auto}
+
+/** 폰트 **/
+.noto {font-family: 'Noto Sans KR', sans-serif}
+.robo {font-family: 'Roboto', sans-serif;}
+.osw {font-family: 'Oswald', sans-serif;}
+
+/** 폰트 컬러 **/
+.fcolor1 {color:#333} /*기본 글씨*/
+.fcolor2 {color:#eee} /*기본 배경 - 연한 회색*/
+.fcolor3 {color:#193e27} /*PC,M 메인 - 진한 녹색*/
+.fcolor4 {color:#e4deba} /*PC,M 서브 - 베이지*/
+.fcolor5 {color:#000} /*검정*/
+.fcolor6 {color:#fff} /*화이트*/
+.fcolor7 {color:#007042} /*녹색*/
 
 /** header **/
-#header {padding-bottom:50px;}
+#header {padding-bottom:50px}
 #header h1 {padding:10px 20px 5px 0}
-#header h1 a {font-family:'Do Hyeon'; font-size:3rem; color:#fff;}
-#header p {color:#666;}
+#header h1 a {font-family:'Do Hyeon'; font-size:3rem; color:#fff}
+#header p {font-family: 'Chilanka', cursive; color:rgba(256,256,256, .3); font-size: 1.5rem}
