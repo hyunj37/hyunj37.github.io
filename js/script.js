@@ -1,6 +1,10 @@
-//toggle
+//contact toggle
 var show = false;
 var scrollHeight = $(document).height();
+$(window).resize(function() {
+    scrollHeight = $(document).height();
+});
+
 $('.contact h3').click(function(){
    if(show===false){
         $('.email').slideDown();
@@ -11,3 +15,4 @@ $('.contact h3').click(function(){
         show = false;
    }
 });
+

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/donut-graph.css">
 
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="images/icons/favicon.ico">
@@ -55,12 +56,46 @@
         <header id="header">
             <div class="container">
                 <h1><a href="index.html">HYUNJ WORKSPACE</a></h1>
-                <p>Hyunj's work list.</p>
+                <p>Web Publisher Hyunj's work list.</p>
             </div>
         </header>
         <div id="contents">
             <div class="container">
                 <h2 class="hidden">본문 콘텐츠 영역</h2>
+                <div class="skill set-grid">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>
+                            <div class="semi-donut"
+                                 style="--percentage : 90; --fill: rgba(256, 256, 256, .9) ;">
+                              90%<br>HTML5/CSS3
+                            </div>
+                            <p>웹표준</p>
+                        </li>
+                        <li>
+                            <div class="semi-donut"
+                                 style="--percentage : 70; --fill: rgba(256, 256, 256, .9) ;">
+                              70%<br>js/jQuery
+                            </div>
+                            <p>jQuery를 사용한 기능 구현</p>
+                        </li>
+                        <li>
+                            <div class="semi-donut"
+                                 style="--percentage : 80; --fill: rgba(256, 256, 256, .9) ;">
+                              80%<br>Photoshop
+                            </div>
+                            <p>레이아웃 구성 및 배너제작</p>
+                        </li>
+                        <li>
+                            <div class="semi-donut"
+                                 style="--percentage : 70; --fill: rgba(256, 256, 256, .9) ;">
+                              70%<br>Illustrator
+                            </div>
+                            <p>기본 툴 사용 및 이미지 제작</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /skill -->
                 <!-- WEBSITE -->
                 <div class="webpages set-grid">
                     <h3>Website</h3>
@@ -101,8 +136,15 @@
                         <div class="modal__content">
                             <h4>웹 표준 사이트</h4>
                             <p class="site-name">GREEN HOUSE</p>
+                            <dl class="participation">
+                                <dt>참여도</dt>
+                                <dd>디자인100%</dd>
+                                <dd>퍼블리싱100%</dd>
+                            </dl>
                             <img src="images/greenhouse_pc_mockup.jpg" alt="greenhouse pc mockup">
-                            <a href="https://hyunj37.github.io/greenhouse_pc/" class="go-site">사이트 바로가기</a>
+                           <!-- <a href="https://hyunj37.github.io/greenhouse_pc/" class="go-site">사이트 바로가기</a>-->
+                            <button onclick="window.open('https://hyunj37.github.io/greenhouse_pc/')" class="go-site">사이트 바로가기</button>
+                            <button onclick="window.open('https://github.com/hyunj37/greenhouse_pc')" class="go-github"><i class="fab fa-github"></i></button>
                             <p class="info-txt">웹 표준을 준수하여 만든 PC버전 사이트로 식물 온라인 몰을 컨셉으로 한 사이트입니다. GNB메뉴, 3종류의 슬라이드, 텝 등 여러 사이트에서 많이 사용하는 기능을 제이쿼리 라이브러리를 이용해 만들었습니다.
                             </p>
                             <table>
@@ -154,8 +196,14 @@
                         <div class="modal__content">
                             <h4>모바일 웹 사이트</h4>
                             <p class="site-name">GREEN HOUSE</p>
+                            <dl class="participation">
+                                <dt>참여도</dt>
+                                <dd>디자인100%</dd>
+                                <dd>퍼블리싱100%</dd>
+                            </dl>
                             <img src="images/greenhouse_m_mockup.jpg" alt="greenhouse mobile mockup">
-                            <a href="" class="go-site">사이트 바로가기</a>
+                            <button onclick="window.open('https://hyunj37.github.io/greenhouse_mobile/')" class="go-site">사이트 바로가기</button>
+                            <button onclick="window.open('https://github.com/hyunj37/greenhouse_mobile')" class="go-github"><i class="fab fa-github"></i></button>
                             <p class="info-txt">모바일 웹에 맞춘 사이트로 이미지 구성은 640px를, 퍼블리싱은 340px을 기준으로 구성했습니다.
                             화면 터치 슬라이드를 위해 swiper 슬라이드를 이용했습니다. 스크롤에 따른 헤더변경 및 메뉴 나타내기 등 다양한 모바일 웹 요소를 만들어보았습니다.
                             </p>
@@ -206,10 +254,16 @@
                 <div id="modal3" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
                     <div class="modal__dialog">
                         <div class="modal__content">
-                            <h4>Modal 3</h4>
+                            <h4>반응형 웹 사이트</h4>
                             <p class="site-name">STARBUCKS</p>
+                            <dl class="participation">
+                                <dt>참여도</dt>
+                                <dd>디자인100%</dd>
+                                <dd>퍼블리싱100%</dd>
+                            </dl>
                             <img src="images/starbucks_responsive_mockup.jpg" alt="starbucks responsive mockup">
-                            <a href="" class="go-site">사이트 바로가기</a>
+                            <button onclick="window.open('https://hyunj37.github.io/starbucks/')" class="go-site">사이트 바로가기</button>
+                            <button onclick="window.open('https://github.com/hyunj37/starbucks')" class="go-github"><i class="fab fa-github"></i></button>
                             <p class="info-txt">스타벅스만의 가치와 특징을 반영하고,
                             영상, 이미지를 활용하여 사용자가 능동적으로 이용할 수 있는 사이트를 만들고자 했습니다.
                             메인과 5개의 서브페이지를 스크롤, 마우스오버, 슬라이드 효과를 주어 구성했습니다.
@@ -302,7 +356,9 @@
             <div class="contact">
                 <h3>Contact Me <i class="far fa-envelope"></i></h3>
                 <div class="email">
-                    <p>Anything you wondered or suggest, please feel free to contact me.</p>
+                    <p>If you have any questions or suggestions, please feel free to contact me.</p>
+                    <p>궁금한 것이나 제안사항이 있다면 언제든지 연락주세요~</p>
+                    <p>Hyunj's email: hyunjeong670@gmail.com</p>
                     <form action="https://formspree.io/hyunjeong670@gmail.com" method="POST">
                         <label>Your Name<input type="text" name="name" class="name"></label>
                         <label>Your Email Address<input type="email" name="_replyto" class="email"></label>
@@ -323,8 +379,6 @@
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/modal.js"></script>
-    <!--<script src="js/modernizr-custom.js"></script>
-    <script src="js/ie-checker.js"></script>-->
 </body>
 
 </html>

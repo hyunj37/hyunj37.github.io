@@ -1,14 +1,18 @@
 @charset "utf-8";
 
 /** 콘텐츠 **/
-#contents .set-grid h3 {font-size:2rem; color:#fff; margin-bottom:10px; font-family: 'Do Hyeon', sans-serif;}
-#contents .set-grid ul {display:grid; grid-template-rows:200px; grid-template-columns: 23.5% 23.5% 23.5% 23.5%; grid-column-gap:2%; grid-row-gap:3vh}
+#contents h3 {font-size:2rem; color:#fff; margin-bottom:10px; font-family: 'Do Hyeon', sans-serif;}
+#contents .set-grid ul {display:grid; grid-template-columns: 23.5% 23.5% 23.5% 23.5%; grid-column-gap:2%; grid-row-gap:3vh}
 #contents .set-grid li a {display:block; width:100%; height:200px; background-color:rgba(256,256,256,.1); border-radius:10px; overflow:hidden; position:relative; color:#333;}
 #contents .set-grid li a:hover {box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);}
 #contents .set-grid li a span {display:block; position:absolute; right:2%;}
 #contents .set-grid li a span.type {top:70%}
 #contents .set-grid li a span.name {font-size:1.25rem; top:80%}
 
+#contents .skill ul {text-align:center}
+#contents .skill ul p {}
+
+#contents .webpages {margin-top:50px}
 #contents .webpages li:nth-child(1) a {background:url(../images/website1.jpg) no-repeat; background-size:cover}
 #contents .webpages li:nth-child(2) a {background:url(../images/website2.jpg) center no-repeat; background-size:cover}
 #contents .webpages li:nth-child(3) a {background:url(../images/website3.jpg) center no-repeat; background-size:cover; color:#ddd}
@@ -16,7 +20,12 @@
 #contents .modal .modal__content {position:relative; color:#02020f;}
 #contents .modal .modal__content h4 {font-size:1.5rem; letter-spacing:-2px; font-weight: bold;}
 #contents .modal .modal__content p.site-name {font-family: 'Do Hyeon', sans-serif; font-size:1.5rem}
-#contents .modal .modal__content .go-site {position:absolute; font-size:1.25rem; font-weight:bold; top: 77px; right: 2.4rem; color:#02020f; background:none; animation-duration:1s; animation-name:sliding; animation-iteration-count: infinite;}
+#contents .modal .modal__content .participation {margin-bottom:10px}
+#contents .modal .modal__content .participation dt {display:inline-block;  font-size:.875rem; font-weight:bold}
+#contents .modal .modal__content .participation dd {display:inline-block; font-size:.875rem}
+#contents .modal .modal__content .go-github {position:absolute; font-size:1.25rem; font-weight:bold; top:146px; right:3rem; color:#02020f; background:none; cursor:pointer}
+#contents .modal .modal__content .go-github:hover i {color:#902bbf}
+#contents .modal .modal__content .go-site {position:absolute; font-size:1.25rem; font-weight:bold; top:100px; right:2.4rem; color:#02020f; background:none; animation-duration:1s; animation-name:sliding; animation-iteration-count: infinite; cursor:pointer}
 @keyframes sliding {
     from {right:3rem;}
     50% {right:2.4rem;}
@@ -48,11 +57,11 @@
 /** footer **/
 #footer {margin-top:100px; overflow:hidden}
 #footer .contact h3 {font-family: 'Do Hyeon', sans-serif; font-size:2rem; position:relative; margin-bottom:10px}
-#footer .contact h3 i {position:absolute; top:5px; left:160px; animation-duration:1s; animation-name:updown; animation-iteration-count: infinite;}
+#footer .contact h3 i {position:absolute; top:5px; left:160px; animation-duration:1s; animation-name:updown; animation-iteration-count: infinite; cursor:pointer}
 @keyframes updown {
-    from {padding-top:3px}
-    50% {padding-top:0}
-    100% {padding-top:3px}
+    from {padding-top:7px}
+    50% {padding-top:3px}
+    100% {padding-top:7px}
 }
 #footer .contact .email {display:none; overflow:hidden; border:1px solid #fff; padding:50px}
 #footer .contact .email p {margin-bottom:20px;}
@@ -60,17 +69,17 @@
 #footer .contact .email form input,
 #footer .contact .email form textarea {background:transparent; display:block; padding:1%; margin-bottom:10px;}
 #footer .contact .email form textarea {width:97%}
-#footer .contact .email form button {background:transparent; padding:10px; border:1px solid #fff; border-radius:5px; float:right}
+#footer .contact .email form button {background:transparent; padding:10px; border:1px solid #fff; border-radius:5px; float:right; cursor:pointer}
 
 
 /* 768px이하 */
 @media screen and (max-width:768px) {
-    #contents .set-grid ul {grid-template-rows:200px; grid-template-columns: 46% 46%; grid-column-gap:4%; grid-row-gap:4vh}
+    #contents .set-grid ul {grid-template-columns: 46% 46%; grid-column-gap:4%; grid-row-gap:4vh}
 }
 
 /* 모바일 */
 @media screen and (max-width:640px) {
-    #contents .set-grid ul {grid-template-rows:250px; grid-template-columns:100%; grid-row-gap:4vh}
+    #contents .set-grid ul {grid-template-columns:100%; grid-row-gap:4vh}
     #contents .set-grid ul a {height:250px}
     #contents .modal .modal__dialog {max-width: 500px;}
 }
