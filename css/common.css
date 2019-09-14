@@ -29,4 +29,6 @@ body {background-color:#02020f}
 #header {padding-bottom:50px}
 #header h1 {padding:10px 20px 5px 0}
 #header h1 a {font-family:'Do Hyeon'; font-size:3rem; color:#fff}
+#header .home {position:absolute; top:20px; right:0; color:#fff; font-size:2rem; opacity:.7}
+#header .home:hover {opacity:1}
 #header p {font-family: 'Chilanka', cursive; color:rgba(256,256,256, .3); font-size: 1.5rem}

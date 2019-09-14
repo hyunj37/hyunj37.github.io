@@ -10,7 +10,7 @@
 #contents .set-grid li a span.name {font-size:1.25rem; top:80%}
 
 #contents .skill ul {text-align:center}
-#contents .skill ul p {}
+#contents .skill ul p {text-align:left; width:200px; margin-top:10px; font-size:.875rem}
 
 #contents .webpages {margin-top:50px}
 #contents .webpages li:nth-child(1) a {background:url(../images/website1.jpg) no-repeat; background-size:cover}
