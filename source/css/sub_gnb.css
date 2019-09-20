@@ -13,8 +13,20 @@
 #contents .tab-box ul li .tab-cont iframe {margin-top:30px;}
 
 
+/* 768px이하 */
+@media screen and (max-width:768px) {
+    html {font-size:14px}
+}
 
+/* 모바일 */
+@media screen and (max-width:640px) {
+    html {font-size:12px}
+}
 
+/* 최소 사이즈 */
+@media screen and (max-width:480px) {
+    #contents .tab-box ul li h4.tab-title a {line-height:normal}
+}
 
 
 
