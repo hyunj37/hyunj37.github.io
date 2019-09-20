@@ -23,8 +23,8 @@
 #contents .modal .modal__content .participation {margin-bottom:10px}
 #contents .modal .modal__content .participation dt {display:inline-block;  font-size:.875rem; font-weight:bold}
 #contents .modal .modal__content .participation dd {display:inline-block; font-size:.875rem}
-#contents .modal .modal__content .go-site {position:absolute; font-size:1.25rem; font-weight:bold; top:100px; right:38px; color:#02020f; background:none; animation-duration:1s; animation-name:sliding; animation-iteration-count: infinite; cursor:pointer}
-@keyframes sliding {
+#contents .modal .modal__content .go-site {position:absolute; font-size:1.25rem; font-weight:bold; top:100px; right:38px; color:#02020f; background:none; animation-duration:1s; animation-name:sliding1; animation-iteration-count:infinite; cursor:pointer}
+@keyframes sliding1 {
     from {right:42px}
     50% {right:38px}
     100% {right:42px}
@@ -87,14 +87,14 @@
 /* 최소 사이즈 */
 @media screen and (max-width:480px) {
     #contents .modal .modal__content p.site-name {margin-bottom:30px}
-    #contents .modal .modal__content .go-site {margin-bottom:40px; top:94px; left:24px; right:unset; font-size:1rem;}
-    #contents .modal .modal__content .go-github {top:160px; right:30px;}
-    #contents .modal .modal__content .info-txt {font-size:.875rem}
-    @keyframes sliding {
+    #contents .modal .modal__content .go-site {margin-bottom:40px; top:94px; left:24px; right:unset; font-size:1rem; animation-name:sliding2}
+    @keyframes sliding2 {
         from {left:28px}
         50% {left:24px}
         100% {left:28px}
     }
+    #contents .modal .modal__content .go-github {top:160px; right:30px;}
+    #contents .modal .modal__content .info-txt {font-size:.875rem}
     #contents .modal .modal__dialog {max-width: 320px;}
     #contents .modal .modal__content {padding:1.5rem}
     #contents .modal .modal__content table {font-size:.5rem; margin-top:10px}
