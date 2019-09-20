@@ -23,14 +23,14 @@
 #contents .modal .modal__content .participation {margin-bottom:10px}
 #contents .modal .modal__content .participation dt {display:inline-block;  font-size:.875rem; font-weight:bold}
 #contents .modal .modal__content .participation dd {display:inline-block; font-size:.875rem}
-#contents .modal .modal__content .go-github {position:absolute; font-size:1.25rem; font-weight:bold; top:146px; right:3rem; color:#02020f; background:none; cursor:pointer}
-#contents .modal .modal__content .go-github:hover i {color:#902bbf}
 #contents .modal .modal__content .go-site {position:absolute; font-size:1.25rem; font-weight:bold; top:100px; right:38px; color:#02020f; background:none; animation-duration:1s; animation-name:sliding; animation-iteration-count: infinite; cursor:pointer}
 @keyframes sliding {
     from {right:42px}
     50% {right:38px}
     100% {right:42px}
 }
+#contents .modal .modal__content .go-github {position:absolute; font-size:1.25rem; font-weight:bold; top:146px; right:40px; color:#02020f; background:none; cursor:pointer}
+#contents .modal .modal__content .go-github:hover i {color:#902bbf}
 #contents .modal .modal__content table {color:#02020f; width:100%; border-top:1px solid #02020f; margin-top:20px}
 #contents .modal .modal__content table tr {border-bottom:1px solid #02020f;}
 #contents .modal .modal__content table tr,
@@ -88,6 +88,7 @@
 @media screen and (max-width:480px) {
     #contents .modal .modal__content p.site-name {margin-bottom:30px}
     #contents .modal .modal__content .go-site {margin-bottom:40px; top:94px; left:24px; right:unset; font-size:1rem;}
+    #contents .modal .modal__content .go-github {top:160px; right:30px;}
     #contents .modal .modal__content .info-txt {font-size:.875rem}
     @keyframes sliding {
         from {left:28px}
