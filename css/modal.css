@@ -93,6 +93,7 @@
 }
 .demo-close svg {
   width: 24px;
+  height: 24px;
   fill: #fff;
   pointer-events: none;
   vertical-align: top;
