@@ -48,6 +48,9 @@
 #contents .modal .modal__content table td.fcolor5.color-chip:before {background:#000}
 #contents .modal .modal__content table td.fcolor6.color-chip:before {background:#fff}
 #contents .modal .modal__content table td.fcolor7.color-chip:before {background:#007042}
+#contents .modal .modal__content table td.fcolor8.color-chip:before {background:#2c1810}
+#contents .modal .modal__content table td.fcolor9.color-chip:before {background:#d1c1a7}
+#contents .modal .modal__content table td.fcolor10.color-chip:before {background:#FC6719}
 
 #contents .code {margin-top:50px}
 #contents .code li a:after {content:''; position:absolute; bottom:0; left:0; width:100%; height:45px; background-color:rgba(256,256,256,.1);}
