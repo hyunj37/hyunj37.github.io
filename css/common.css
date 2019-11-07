@@ -1,4 +1,8 @@
 @charset "utf-8";
+@font-face {
+    font-family: 'NanumBarunGothic';
+    src: url(font/NanumBarunGothic.ttf) format('truetype');
+}
 
 /** 스킵 네비게이션 **/
 #skip {position:relative}
@@ -15,6 +19,8 @@ body {background-color:#02020f}
 .noto {font-family: 'Noto Sans KR', sans-serif}
 .robo {font-family: 'Roboto', sans-serif;}
 .osw {font-family: 'Oswald', sans-serif;}
+.nanumBaun {font-family: 'NanumBarunGothic', sans-serif;}
+.nunito {font-family: 'Nunito', sans-serif; font-weight:900}
 
 /** 폰트 컬러 **/
 .fcolor1 {color:#333} /*기본 글씨*/
@@ -24,6 +30,9 @@ body {background-color:#02020f}
 .fcolor5 {color:#000} /*검정*/
 .fcolor6 {color:#fff} /*화이트*/
 .fcolor7 {color:#007042} /*녹색*/
+.fcolor8 {color:#2c1810} /*진한갈색*/
+.fcolor9 {color:#d1c1a7} /*연한베이지*/
+.fcolor10 {color:#FC6719} /*주황*/
 
 /** header **/
 #header {padding-bottom:50px}

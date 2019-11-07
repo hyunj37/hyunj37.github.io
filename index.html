@@ -37,6 +37,13 @@
     <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
     <!-- font-family: 'Chilanka', cursive; -->
 
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Great+Vibes|Nunito:700,800,900&display=swap" rel="stylesheet">
+    <!--
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Concert One', cursive;
+    -->
+
     <!-- HTLM5shiv ie6~8 -->
     <!--[if lt IE 9]> 
       <script src="assets/js/html5shiv.min.js"></script>
@@ -103,30 +110,28 @@
                     <h3>Website</h3>
                     <ul>
                         <li>
-                            <a href="" data-modal="#modal" class="modal__trigger">
+                            <a href="#" data-modal="#modal" class="modal__trigger">
                                 <span class="type">웹 표준 사이트</span>
                                 <span class="name">GREEN HOUSE</span>
                             </a>
                         </li>
                         <li>
-                            <a href="" data-modal="#modal2" class="modal__trigger">
+                            <a href="#" data-modal="#modal2" class="modal__trigger">
                                 <span class="type">모바일 사이트</span>
                                 <span class="name">GREEN HOUSE</span>
                             </a>
                         </li>
                         <li>
-                            <a href="" data-modal="#modal3" class="modal__trigger">
+                            <a href="#" data-modal="#modal3" class="modal__trigger">
                                 <span class="type">반응형 사이트</span>
                                 <span class="name">STARBUCKS</span>
                             </a>
                         </li>
                         <li>
-                            <!--
-                            <a href="#" target="_blank">
-                                <span clasns="type">부트스트랩 사이트</span>
-                                <span class="name"></span>
+                            <a href="#" data-modal="#modal4" class="modal__trigger">
+                                <span class="type">던킨도너츠 커버</span>
+                                <span class="name">DUNKIN'</span>
                             </a>
-                            -->
                         </li>
                     </ul>
                 </div>
@@ -289,6 +294,68 @@
                                         <td class="fcolor5 color-chip">#00000</td>
                                         <td class="fcolor6 color-chip darkbg">#ffffff</td>
                                         <td class="fcolor7 color-chip">#007042</td>
+                                    </tr>
+                                    <tr>
+                                        <th>HTML</th>
+                                        <td colspan="3">HTML5</td>
+                                    </tr>
+                                    <tr>
+                                        <th>CSS</th>
+                                        <td colspan="3">css3</td>
+                                    </tr>
+                                    <tr>
+                                        <th>javascript</th>
+                                        <td colspan="3">jQuery-1.12.4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- modal close button -->
+                            <a href="" class="modal__close demo-close">
+                                <svg class="" viewBox="0 0 24 24">
+                                    <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+                                    <path d="M0 0h24v24h-24z" fill="none" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal4" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
+                    <div class="modal__dialog">
+                        <div class="modal__content">
+                            <h4>퍼블리싱 커버 사이트</h4>
+                            <p class="site-name">DUNKIN'</p>
+                            <dl class="participation">
+                                <dt>참여도</dt>
+                                <dd>퍼블리싱100%</dd>
+                            </dl>
+                            <img src="images/dunkin_pc_mockup.jpg" alt="dunkin cover mockup">
+                            <button onclick="window.open('https://hyunj37.github.io/Dunkin_cover/')" class="go-site">사이트 바로가기</button>
+                            <button onclick="window.open('https://github.com/hyunj37/Dunkin_cover')" class="go-github"><i class="fab fa-github"></i></button>
+                            <p class="info-txt">던킨도너츠 공식 사이트를 최대한 비슷하게 만들어보았습니다.<br/>
+                            저는 기본 너비를 1280px로 잡았습니다.<br/>
+                            기존 이미지로 되어있는 배너들은 폰트와 배경으로 분리하고 레이아웃css를 통일하여 적용했습니다.<br/>
+                            메인 슬라이드와 이벤트 배너들은 swiper slide를 사용했으며, 이벤트 배너는 4개의 슬라이드를 합쳐서 하나의 페이징 버튼을 사용하게 했습니다.<br/>
+                            스크롤을 통해 특정위치에 오면 요소들에게 transition, translate효과를 주도록 했습니다.<br/>
+                            sns의 마우스 연동 스크롤은 pageX를 사용하여 마우스가 움직이는 영역과 콘텐츠가 움직이는 영역의 길이 비를 이용해서 만들어보았습니다.
+                            </p>
+                            <table>
+                                <colgroup>
+                                    <col width="31%">
+                                    <col width="23%">
+                                    <col width="23%">
+                                    <col width="23%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>Typography</th>
+                                        <td colspan="1" class="nanumBaun">나눔바른고딕</td>
+                                        <td colspan="2" class="nunito">NUNITO</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Color</th>
+                                        <td class="fcolor8 color-chip">#2c1810</td>
+                                        <td class="fcolor9 color-chip">#d1c1a7</td>
+                                        <td class="fcolor10 color-chip">#FC6719</td>
                                     </tr>
                                     <tr>
                                         <th>HTML</th>
