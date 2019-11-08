@@ -2,16 +2,17 @@
 
 /** 콘텐츠 **/
 #contents h3 {font-size:2rem; color:#fff; margin-bottom:10px}
-#contents .tab-box {position:relative; margin-top:30px; padding-top:41px; border:1px solid #fff}
+#contents .tab-box {position:relative; margin-top:30px; padding-top:82px; border:1px solid #fff}
 #contents .tab-box ul li h4.tab-title {position:absolute; top:0; width:20%; text-align:center}
 #contents .tab-box ul li.tab-area1 h4.tab-title {left:0%}
 #contents .tab-box ul li.tab-area2 h4.tab-title {left:20%}
 #contents .tab-box ul li.tab-area3 h4.tab-title {left:40%}
 #contents .tab-box ul li.tab-area4 h4.tab-title {left:60%}
 #contents .tab-box ul li.tab-area5 h4.tab-title {left:80%}
+#contents .tab-box ul li.tab-area6 h4.tab-title {top:41px; left:0%}
 #contents .tab-box ul li h4.tab-title a {font-size:1rem; color:#fff; display:block; border-right:1px solid #fff; border-bottom:1px solid #fff; height:40px; line-height:40px;}
-#contents .tab-box ul li:last-child h4.tab-title a {border-right:none}
-#contents .tab-box ul li h4.tab-title.on a {border-bottom:none;}
+#contents .tab-box ul li:nth-child(5n) h4.tab-title a {border-right:none}
+#contents .tab-box ul li h4.tab-title.on a {font-weight:bold; color:#33a7f0}
 #contents .tab-box ul li .tab-cont {display:none; padding:3%}
 #contents .tab-box ul li .tab-cont iframe {margin-top:30px;}
 
