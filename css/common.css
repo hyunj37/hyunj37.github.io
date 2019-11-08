@@ -41,3 +41,7 @@ body {background-color:#02020f}
 #header .home {position:absolute; top:20px; right:0; color:#fff; font-size:2rem; opacity:.7}
 #header .home:hover {opacity:1}
 #header p {font-family: 'Chilanka', cursive; color:rgba(256,256,256, .3); font-size: 1.5rem}
+
+/* clearfix */
+.clearfix:before, .clearfix:after {display:block; content:''; line-height: 0;}
+.clearfix:after {clear:both;}
